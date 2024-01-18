@@ -1,0 +1,74 @@
+.pageLink {
+    display: block;
+    text-align: center; /* căn giữa theo chiều ngang */
+    background-color: lightblue;
+
+}
+
+.pageLink a {
+    display: inline-block; /* chuyển thành phần tử inline block để có thể áp dụng width và margin */
+    width: 100px; /* độ rộng mong muốn của mỗi phần tử a */
+    margin: 50px 150px; /* căn lề giữa các phần tử a */
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.prod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.product-card {
+    width: 350px;
+    height: 500px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image {
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-details {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-name {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.product-price {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.discount {
+    font-size: 1.2em;
+    color: green;
+    margin: 5px 0;
+    float: right;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin-top: 20px;
+    cursor: pointer;
+}
