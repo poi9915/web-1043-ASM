@@ -14,7 +14,7 @@
     <a href="SignUp.html">Đăng ký</a>
     <a href="Card.html">Sản Phẩm</a>
 </div>
-
+<script src="js/popup.js"></script>
 <div class="prod">
     <div class="product-card">
         <img src="img/sp/sp1.jpg" class="product-image">
@@ -22,7 +22,7 @@
             <h2 class="product-name">ASUS ROG STRIX-RTX 4090-O24G-GAMING</h2>
             <p class="product-price"> 59.999.000₫ </p>
             <p class="discount"> -20% </p>
-            <button class="buy-button">Buy Now</button>
+            <button class="buy-button" onclick="showProductDetails('ASUS ROG STRIX-RTX 4090-O24G-GAMING' , '59.999.000₫')">Buy Now</button>
         </div>
     </div>
     <div class="product-card">
@@ -31,7 +31,7 @@
             <h2 class="product-name">Card màn hình MSI GeForce RTX 4090 GAMING TRIO 24G</h2>
             <p class="product-price"> 54.990.000₫ </p>
             <p class="discount"> -20% </p>
-            <button class="buy-button">Buy Now</button>
+            <button class="buy-button" onclick="showProductDetails('Card màn hình MSI GeForce RTX 4090 GAMING TRIO 24G','54.990.000₫')">Buy Now</button>
         </div>
     </div>
     <div class="product-card">
@@ -40,8 +40,14 @@
             <h2 class="product-name">VGA ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X White Edition</h2>
             <p class="product-price"> 53,990,000₫ </p>
             <p class="discount"> -20% </p>
-            <button class="buy-button">Buy Now</button>
+            <button class="buy-button" onclick="showProductDetails('VGA ZOTAC GAMING GeForce RTX 4090 Trinity OC 24GB GDDR6X White Edition','53,990,000₫')">Buy Now</button>
         </div>
+    </div>
+    <!-- Popup container -->
+    <div class="popup" id="productPopup">
+        <span onclick="closePopup()" style="cursor: pointer; float: right;">&times;</span>
+        <h2>Selected Product:</h2>
+        <div id="popupContent"></div>
     </div>
 </div>
 </body>

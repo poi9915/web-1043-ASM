@@ -24,31 +24,33 @@
 </div>
 <h2>Form Đăng Ký</h2>
 
-<form>
+<form name="myForm" onsubmit="return valid()">
+    <script src="js/ValidForm.js"></script>
     <label for="name">Tên:</label>
-    <input type="text" id="name" name="name" required><br>
-
+    <input type="text" id="name" name="name"> <span id="spName"></span>
+    <br><br>
     <label for="email">Email:</label>
-    <input type="text" id="email" name="email" required><br>
+    <input type="text" id="email" name="email" ><span id="spEmail"></span>
+    <br><br>
     <label for="age">Tuổi:</label>
-    <input type="number" id="age" name="age" required><br>
-
+    <input type="number" id="age" name="age" > <span id="spAge"></span>
+    <br><br>
     <label for="password">Mật khẩu:</label>
-    <input type="password" id="password" name="password" required><br>
-
+    <input type="password" id="password" name="password" > <span id="spPass"></span>
+    <br><br>
     <label for="confirm_password">Nhập lại mật khẩu:</label>
-    <input type="password" id="confirm_password" name="confirm_password" required><br>
-
+    <input type="password" id="confirm_password" name="confirm_password" ><span id="spRePass"></span>
+    <br><br>
     <div class="radiobtn" style="display: flex">
         <label>Giới tính:</label>
-        <input style="margin: 0 20px" type="radio" id="male" name="gender" value="male" required>
+        <input style="margin: 0 20px" type="radio" id="male" name="gender" value="male" >
         <label for="male">Nam</label>
-        <input style="margin: 0 20px" type="radio" id="female" name="gender" value="female" required>
-        <label for="female">Nữ</label><br>
-    </div>
-
+        <input style="margin: 0 20px" type="radio" id="female" name="gender" value="female" >
+        <label for="female">Nữ</label>
+    </div> <span id="spBtn"></span>
+    <br><br>
     <label for="dob">Ngày sinh:</label>
-    <input type="date" id="dob" name="dob" required><br>
+    <input type="date" id="dob" name="dob" ><span id="spDOB"></span>
 
     <input type="submit" value="Đăng ký">
 </form>

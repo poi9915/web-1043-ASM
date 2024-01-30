@@ -4,7 +4,9 @@
     background-color: lightblue;
 
 }
-
+span{
+    color: red;
+}
 .pageLink a {
     display: inline-block; /* chuyển thành phần tử inline block để có thể áp dụng width và margin */
     width: 100px; /* độ rộng mong muốn của mỗi phần tử a */
